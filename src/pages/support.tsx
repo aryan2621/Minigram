@@ -35,7 +35,7 @@ export default function Support() {
                               <AccordionTrigger>How do I delete my account?</AccordionTrigger>
                               <AccordionContent>
                                  To delete your account, go to the settings page
-                                 and click the "Delete Account" button. This
+                                 and click the &quot;Delete Account&quot; button. This
                                  will permanently remove your account and all
                                  associated data.
                               </AccordionContent>
@@ -44,8 +44,8 @@ export default function Support() {
                               <AccordionTrigger>How do I change my profile picture?</AccordionTrigger>
                               <AccordionContent>
                                  To change your profile picture, go to the
-                                 settings page and click the "Change Profile
-                                 Picture" button. You can then upload a new
+                                 settings page and click the &quot;Change Profile
+                                 Picture&quot; button. You can then upload a new
                                  image from your device.
                               </AccordionContent>
                            </AccordionItem>
@@ -53,7 +53,7 @@ export default function Support() {
                               <AccordionTrigger>How do I report a post?</AccordionTrigger>
                               <AccordionContent>
                                  To report a post, click the three-dot menu in
-                                 the top right of the post and select "Report".
+                                 the top right of the post and select &quot;Report&quot;.
                                  You can then choose the reason for reporting
                                  the post.
                               </AccordionContent>
