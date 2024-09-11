@@ -1,40 +1,116 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Minigram
 
-First, run the development server:
+A starter project for the Next js, mini instagram [Minigram] where used can upload their posts.
+
+## Screenshots
+
+![App Screenshot](https://github.com/user-attachments/assets/51ef054c-349d-49ba-9f0c-51ddac1d8595)
+![App Screenshot](https://github.com/user-attachments/assets/9928f178-2309-493a-a321-14978a6f7e1a)
+![App Screenshot](https://github.com/user-attachments/assets/20dc2253-7ceb-4e22-a7ae-902e605d14ab)
+
+## Tech Stack
+
+**Client:** Next, Firebase, Appwrite
+
+
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/aryan2621/Minigram
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd Minigram
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install dependencies
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## API Reference
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Login
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```http
+  POST /login
+```
 
-## Deployed URL
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `email` | `string` | **Required**. Email Id |
+| `password` | `string` | **Required**. password |
 
-https://minigram-aryan2621s-projects.vercel.app/
+#### Signup
+
+```http
+  POST /signup
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `email`      | `string` | **Required**. Email Id |
+| `password`      | `string` | **Required**. Password |
+| `first name`      | `string` | **Required**. First Name |
+| `last name`      | `string` | **Required**. Last Name |
+
+
+
+```http
+  GET /posts
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `token`      | `string` | **Required**. In headers |
+
+```http
+  DELETE /post
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `postId`      | `string` | **Required**. Post Id |
+
+```http
+  POST /post
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `post Obj`      | `string` | **Required**. Post Object |
+
+```http
+  GET /user
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `token`      | `string` | **Required**. In headers |
+## Deployment
+
+To deploy this project run
+
+```bash
+  npm run build && npm run start
+```
+
+
+## Support
+
+For support, email risha2621@gmail.com or join me at Linkedin https://www.linkedin.com/in/rishabh-verma-5366901a1/
+
